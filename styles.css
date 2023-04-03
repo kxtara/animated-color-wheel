@@ -1,0 +1,162 @@
+:root {
+  --red: #ff0000;
+  --orange: #ff7f00;
+  --yellow: #ffff00;
+  --green: #00ff00;
+  --blue: #0000ff;
+  --indigo: #4b0082;
+  --violet: #9400d3;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background: black;
+}
+
+body,
+.container,
+.mixed,
+#red,
+#yellow,
+#orange,
+#green,
+#blue,
+#indigo,
+#violet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 2s height 2s linear 1s;
+}
+
+.container {
+  background-color: rgb(204, 214, 55);
+  width: 10rem;
+  height: 10rem;
+  animation: rainbow 6s ease-in-out infinite;
+}
+
+.container div,
+.container {
+  border-radius: 50%;
+}
+
+#red {
+  background: var(--red);
+  width: 9rem;
+  height: 9rem;
+  animation: rainbow 6s ease-in-out 1s infinite;
+}
+
+#orange {
+  background: var(--orange);
+  width: 8rem;
+  height: 8rem;
+  animation: rainbow 6s ease-in-out 2s infinite;
+}
+
+#yellow {
+  background: var(--yellow);
+  width: 7rem;
+  height: 7rem;
+  animation: rainbow 6s ease-in-out 3s infinite;
+}
+
+#green {
+  background: var(--green);
+  width: 6rem;
+  height: 6rem;
+  animation: rainbow 6s ease-in-out 4s infinite;
+}
+
+#blue {
+  background: var(--blue);
+  width: 5rem;
+  height: 5rem;
+  animation: rainbow 6s ease-in-out 5s infinite;
+}
+
+#indigo {
+  background: var(--indigo);
+  width: 4rem;
+  height: 4rem;
+  animation: rainbow 6s ease-in-out 6s infinite;
+}
+
+#violet {
+  background: var(--violet);
+  width: 3rem;
+  height: 3rem;
+  animation: rainbow 6s ease-in-out 7s infinite;
+}
+
+.mixed {
+  background: linear-gradient(
+    89.7deg,
+    rgba(223, 0, 0, 1) 2.7%,
+    rgba(214, 91, 0, 1) 15.1%,
+    rgba(233, 245, 0, 1) 29.5%,
+    rgba(23, 255, 17, 1) 45.8%,
+    rgba(29, 255, 255, 1) 61.5%,
+    rgba(5, 17, 255, 1) 76.4%,
+    rgba(202, 0, 253, 1) 92.4%
+  );
+  width: 2rem;
+  height: 2rem;
+}
+
+@keyframes rainbow {
+  0% {
+    background: var(--red);
+  }
+  15% {
+    background: var(--orange);
+  }
+  30% {
+    background: var(--yellow);
+  }
+  45% {
+    background: var(--green);
+  }
+  60% {
+    background: var(--blue);
+  }
+  75% {
+    background: var(--indigo);
+  }
+  90% {
+    background: var(--violet);
+  }
+  100% {
+    background: var(--red);
+  }
+}
+
+.container:hover,
+#red:hover,
+#yellow:hover,
+#orange:hover,
+#green:hover,
+#blue:hover,
+#indigo:hover,
+#violet:hover {
+  width: 25rem;
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
