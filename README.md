@@ -29,11 +29,11 @@ Users should be able to:
 
 ### Screenshot
 
-![ScreenShot](https://raw.github.com/kxtara/animated-color-wheel/main/images/animation.png)
+![ScreenShot](https://raw.github.com/kxtara/animation/main/images/animation.png)
 
 ### Links
 
-- Live Site URL: [()]
+- Live Site URL: [(https://kxtara.github.io/animated-color-wheel/)]
 
 ## My process
 
