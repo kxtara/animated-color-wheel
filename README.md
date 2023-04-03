@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![ScreenShot](https://raw.github.com/kxtara/animation/main/images/animation.png)
+![ScreenShot](https://raw.github.com/kxtara/animated-color-wheel/main/image/animation.png)
 
 ### Links
 
